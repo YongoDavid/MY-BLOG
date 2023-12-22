@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* @media screen (max-width:576px){
+    header{
+        padding: 8px 16px;
+        height: 80px;
+    }
+} */
+
+body{
+    background-color: rgb(249, 249, 249);
+}
+
+nav{
+    padding: 8px 16px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(17, 234, 191);
+    /* position: relative;   */
+}
+.Navigation-Area{
+    display: flex;
+    align-items: center;
+}
+.Navigation-Area h1{
+    font-size: 30px;
+    font-weight: 800px;
+    color: black;
+}
+.Navigation-Area h5 a{
+    position: relative;
+    left: 65em;
+    text-decoration: none;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Main section of the page  */
+main h2{
+    padding: 8px 16px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.TheComment{
+    position: relative;left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 8px 5px 28px -4px rgb(190, 189, 189);
+    margin: 20px 0px;
+    padding: 30px 30px;
+    /* border: 1px solid; */
+    display: block;
+    width: 600px;
+}
+.TheComment h3 , p {
+padding-bottom: 10px;
+}
+
+.TheComment button {
+    position: relative;
+    left: 29em;
+    border: none;
+    background-color: rgb(17, 234, 191);
+    padding: 10px 10px;
+    width: 70px;
+}
