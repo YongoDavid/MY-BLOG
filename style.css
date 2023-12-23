@@ -16,8 +16,8 @@ body{
 }
 
 nav{
-    padding: 8px 16px;
-    height: 80px;
+    padding: 16px 36px;
+    height: 120px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -25,19 +25,29 @@ nav{
     /* position: relative;   */
 }
 .Navigation-Area{
+    padding: 16px 36px;
     display: flex;
     align-items: center;
 }
 .Navigation-Area h1{
-    font-size: 30px;
-    font-weight: 800px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 900px;
     color: black;
 }
 .Navigation-Area h5 a{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+    color: black;
+    padding: 1px 6px;
+    margin: 16px 10px 16px 0px;
     position: relative;
     left: 65em;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
+    font-weight: 700;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,25 +58,35 @@ nav{
 
 /* Main section of the page  */
 main h2{
+    position: relative;
+    left: 1.8em;
+    font-size: 32px;
+    margin: 32px 0px;
+    font-weight: 400;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     padding: 8px 16px;
-    height: 80px;
     display: flex;
     align-items: center;
 }
 
 .TheComment{
-    position: relative;left: 20px;
+    position: relative;
+    left: 9em;
     background-color: white;
     border-radius: 10px;
     box-shadow: 8px 5px 28px -4px rgb(190, 189, 189);
-    margin: 20px 0px;
-    padding: 30px 30px;
-    /* border: 1px solid; */
+    padding: 30px 20px 30px 20px;
     display: block;
-    width: 600px;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px;
+    
 }
 .TheComment h3 , p {
 padding-bottom: 10px;
+margin-top: 10px;
+margin-bottom: 30px;
 }
 
 .TheComment button {
@@ -75,5 +95,11 @@ padding-bottom: 10px;
     border: none;
     background-color: rgb(17, 234, 191);
     padding: 10px 10px;
-    width: 70px;
+    width: 90px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600px;
+    transition: 0.5s ease;
 }
