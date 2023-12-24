@@ -65,7 +65,7 @@ nav{
     transition: transform 0.3s ease;
 }
 .dropdown{
-/* display: none; */
+display: none;
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -82,8 +82,8 @@ border-radius: 5px;
 transition: 0.5s ease;
 }
 
-.user-section:hover .arrow-icon {
-  transform: rotate(-90deg);
+.arrow-icon:active {
+  transform: rotate(-180deg);
 }
 .user-section:hover .dropdown {
   display: block;
