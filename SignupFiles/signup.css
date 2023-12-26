@@ -87,7 +87,7 @@ margin-bottom: 25px;
 padding-left: 5px;
 }
 
-.Formbtn button{
+#Formbtn button{
     position: relative;
     left: 11em;
    text-align: center;
@@ -102,6 +102,13 @@ padding-left: 5px;
     background-color: rgb(17, 234, 191);
     font-size: 16px;
     font-weight: 600;
+}
+
+#ermsg {
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .Signup-fter {

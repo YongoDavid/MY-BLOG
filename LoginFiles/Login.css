@@ -105,6 +105,12 @@ margin-bottom: 25px;
     font-size: 16px;
     font-weight: 600;
 }
+#errorMessage{
+    color: red;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
 .Login-fter {
     text-align: center;
     font-size: 16px;

@@ -23,37 +23,93 @@
 // });
 
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const processLoginForm = () => {
+//         let Email = document.getElementById('email').value;
+//         let Password = document.getElementById('Password').value;
+
+//         const errmsg = document.getElementsByClassName('message')
+//         const btn = document.getElementById('Formbtn')
+
+//         btn.addEventListener('click', (e) => {
+//         e.preventDefault()
+//         errmsg.innerText = ''
+
+//         if (!Email.value || !Password.value) {
+//             errmsg.innerText= 'Please fill in your information'
+//         }
+//     })
+        
+
+//         displayData(Email, Password); {
+//             console.log('Login succesful')
+//         }
+
+//         let StoreLoginData = {
+//             Email: Email,
+//             Password: Password,
+//         };
+
+//         localStorage.setItem('StoreLoginData', JSON.stringify(StoreLoginData))
+//     };
+    
+//     function displayData() {
+//         let GetLoginData = localStorage.getItem('StoreLoginData');
+//         let StoreLoginData = JSON.parse(GetLoginData);
+
+//         console.log('Login succesful', StoreLoginData)
+//     };
+//     processLoginForm()
+    
+    
+
+
+// });
+
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const processLoginForm = () => {
-        let Email = document.getElementById('email')
-        let Password = document.getElementById('Password')
+        const Email = document.getElementById('email');
+        const Password = document.getElementById('Password');
+        const errmsg = document.getElementById('errorMessage'); // Assuming you have an element with this ID for displaying errors
+        const btn = document.getElementById('Formbtn');
 
-        displayData(Email, Password); {
-            console.log('Login succesful')
-        }
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
 
-        let StoreLoginData = {
-            Email: Email,
-            Password: Password,
-        };
+            // Clear previous error message
+            errmsg.innerText = '';
 
-        localStorage.setItem('StoreLoginData', JSON.stringify(StoreLoginData))
+            if (!Email.value || !Password.value) {
+                errmsg.innerText = 'Please fill in your information';
+            } else {
+                // If the form is valid, proceed with processing and displaying data
+                displayData(Email.value, Password.value);
+                console.log('Login successful');
+                
+                let storeLoginData = {
+                    Email: Email.value,
+                    Password: Password.value,
+                };
+
+                localStorage.setItem('StoreLoginData', JSON.stringify(storeLoginData));
+            }
+        });
     };
 
-    processLoginForm()
-    
-    function displayData() {
-        let GetLoginData = localStorage.getItem('StoreLoginData');
+    function displayData(email, password) {
+        let getLoginData = localStorage.getItem('StoreLoginData');
+        let storeLoginData = JSON.parse(getLoginData);
 
-        let StoreLoginData = JSON.parse(GetLoginData);
-
-        console.log('Login succesful' , StoreLoginData)
+        console.log('Login successful', storeLoginData);
     }
 
-    let submit = document.querySelector('#Formbtn')
-    submit.addEventListener('click', processLoginForm)
-    
-    displayData()
-})
+    processLoginForm();
+});
+
+
+
 
 // FIGURE OUT WHY THW LOGIN DATA IS NOT SAVING 
