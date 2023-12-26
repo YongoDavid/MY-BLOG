@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="Profile.css">
+    <title>AddBlog</title>
+    <link rel="stylesheet" href="Addblog.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;600;700&family=Poppins:wght@900&display=swap"
         rel="stylesheet">
@@ -26,19 +26,27 @@
                     </svg></a></h5>
             <ul class="dropdown">
                 <li><a href="../ProfileFiles/MainProfile.html">Profile</a></li>
-                <li><a href="../ProfileFiles/Logout.html">Log Out</a></li>
+                <li><a href="../index.html">Log Out</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
-        <h2>Hi , Profile</h2>
-
-        <button type="submit" id="Profilebtn">Edit profile</button>
+        <h2>Add A New Blog</h2>
     </main>
 
+    <form action="">
+        <label for="Title">Title</label> <br>
+        <input type="text" id="Title"> <br>
 
-    <button type="button" id="Addbtn"><a href="./Addblog.html">Add Blog</a></button>
+        <label for="Body">Body</label> <br>
+        <textarea name="Body" id="Body" cols="30" rows="10"></textarea>
+
+        <button type="submit" id="Addblogbtn">Post</button>
+    </form>
+
+
+    <!-- <button type="button" id="Addbtn"><a href="#">Add Blog</a></button> -->
 
     <script src="Profile.js"></script>
 </body>
