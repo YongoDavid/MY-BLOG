@@ -1,9 +1,12 @@
 const http = require('http')
-http.createServer((req,res) =>{
-    res.setHeader('Content-Type' , 'test/plain')
+
+const server = http.createServer((req,res) =>{
+    res.setHeader('Content-Type' , 'Text/plain')
     res.writeHead(200)
-    res.write('Home page')
+    res.write('welcome')
     res.end()
 })
 
-const 
+server.listen(4000 , 'localhost' ,() =>{
+    console.log('listeing on port 4000')
+})
