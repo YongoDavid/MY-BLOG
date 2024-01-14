@@ -98,8 +98,10 @@ transition: 0.5s ease;
   text-decoration: none;
   color: #333;
 }
-
-
+/* ONLY DISPLAY COMMENTS WHEN THE PAGE HAS BEEN LOGGED INTO  */
+main .TheComment {
+    display: none;
+}
 /* Main section of the page  */
 main h2{
     position: relative;
