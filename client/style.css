@@ -157,12 +157,17 @@ transform: scale(1.1);
 }
 
 
-/* mobile responsiveness   */
-@media (max-width : 375px){
-
-}
-
 /* laptop responsiveness  */
 @media (min-width : 990px){
-    
+    body{
+
+    }
 }
+
+/* mobile responsiveness   */
+@media (max-width : 375px){
+    body{
+        
+    }
+}
+
