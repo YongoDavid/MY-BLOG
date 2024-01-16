@@ -13,6 +13,7 @@
 
 body{
     background-color: rgb(249, 249, 249);
+    overflow-x: hidden;
 }
 
 nav{
@@ -100,7 +101,7 @@ transition: 0.5s ease;
 }
 /* ONLY DISPLAY COMMENTS WHEN THE PAGE HAS BEEN LOGGED INTO  */
 main .TheComment {
-    display: none;
+    /* display: none; */
 }
 /* Main section of the page  */
 main h2{
